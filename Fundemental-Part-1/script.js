@@ -173,5 +173,94 @@ GOOD LUCK
 
 // console.log(BMIMark, BMIJohn, markHigherBMI)
 
+// 17.Strings and Template Literals 문자열과 템플릿 리터럴 
+// Template Literals can write a string in a more normal way
 
+/* const firstName = 'Jonas';
+const job = 'teacher';
+const birthYear = 1991;
+const year = 2037;
+
+const jonas = "I'm " + firstName + ', a ' + (year - birthYear) + 'years old ' + job + '!';
+console.log(jonas);
+
+// this is a lot easier 
+// this is a way easier way of writing this string
+const jonaNew = `I'm ${firstName}, a ${year - birthYear} year old
+${job}`;
+console.log(jonaNew);
+
+console.log(`Just a regular string`)
+
+// multiline strings  = \n\
+console.log(`string with \n\
+multiple \n\
+lines`);
+
+console.log(`Sting
+multiple
+lines`); */
+
+// if/else Statements
+/* const age = 15;
+// const isOldEnough = age >= 18;
+
+  if (age >= 18) {
+    console.log('Sarah can start driving license 🚗');
+  } else {
+    const yearsLeft = 18 - age;
+    console.log(`Sarah is too young. Wait another ${yearsLeft} years :)`);
+  } */
+
+// 제어구조 control structure
+/* if() {
+
+} else {
+
+} */
+
+/* const birthYear = 2012;
+
+let century;
+if(birthYear <= 2000) {
+  century = 20;
+} else {
+  century = 21;
+}
+console.log(century); // let century를 if문 안에 넣고 실행하면 오류 Uncaught ReferenceError: century is not defined
+
+ */
+
+/*
+Use the BMI example from Challenge #1, and the code you already wrote, and improve it:
+
+1. Print a nice output to the console, saying who has the higher BMI. The message can be either "Mark's BMI is higher than John's!" or "John's BMI is higher than Mark's!"
+2. Use a template literal to include the BMI values in the outputs. Example: "Mark's BMI (28.3) is higher than John's (23.9)!"
+
+HINT: Use an if/else statement 😉
+
+GOOD LUCK 😀
+*/
+
+/* const massMark = 78;
+const heightMark = 1.69;
+const massJohn = 92;
+const heightJohn = 1.95;
+
+const massMark = 95;
+const heightMark = 1.88;
+const massJohn = 85;
+const heightJohn = 1.76;
+
+const BMIMark = massMark / heightMark ** 2;
+const BMIJohn = massJohn / (heightJohn * heightJohn);
+console.log(BMIMark, BMIJohn);
+
+// mark > John
+
+if(BMIMark > BMIJohn) {
+  console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})!`)
+} else {
+  console.log(`John's BMI(${BMIJohn}) is higher than Mark's(${BMIMark})`)
+} */
 
