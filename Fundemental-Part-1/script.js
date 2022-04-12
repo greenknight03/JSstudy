@@ -264,3 +264,90 @@ if(BMIMark > BMIJohn) {
   console.log(`John's BMI(${BMIJohn}) is higher than Mark's(${BMIMark})`)
 } */
 
+// 20. Type Conversion 
+
+/* const inputYear = '1991';
+console.log(Number(inputYear), inputYear); // 1991 '1991'
+console.log(inputYear + 18);
+console.log(Number(inputYear) + 18);
+
+console.log(Number('Jonas'));  // NaN invalid number
+console.log(typeof NaN); //number
+
+console.log(String(23), 23); //23(string) 23(number)
+
+// type Coercion
+console.log('I am ' + 23 + ' years old'); // I am 23 years old
+console.log('23' - '10' - 3);  // 10 
+console.log('23' + '10' + 3); // 23103
+console.log('23' * '2'); // 46
+console.log('23' / '2'); // 11.5
+
+let n = '1' + 1; // '11'
+n = n - 1; // 10 
+console.log(n);
+
+console.log(2+3+4+'5'); // "95"
+console.log('10'-'4'-'3'-2 + '5'); // 15 */
+
+/* 
+// 21. Truthy and Falsy Values
+
+// 5 falsy values: 0 , "", undefined, null, NaN
+
+console.log(Boolean(0));               // false
+console.log(Boolean(undefined));       // false 
+console.log(Boolean('Jonas'));         // true
+console.log(Boolean({}));              // true 빈객체
+console.log(Boolean(''));              // false 
+
+// Boolean is always implicit, not explicit  
+// Boolean은 항상 명시적이지 않고 암시적이다. 또한 자바스크립트는 모든 값을 Boolean로 강제변환 시킨다.
+
+const money = 0;
+if(money) {
+  console.log("Don't spend it all ;)");
+} else {
+  console.log("You should get a job! :(")
+}
+
+let height;
+if(height) {
+  console.log('YAY! Height is defined');
+} else {
+  console.log('Height is UNDEFINED');
+}
+
+let weight = 0;   // 0 is falsy value
+if(weight) {
+  console.log('YAY! Weight is defined');
+} else {
+  console.log('Weight is UNDEFINED');
+}
+ */
+
+// Equality Operators 등호연산자 
+
+/* 
+const age = '18';
+if(age === 18) console.log('You just became an adult:D(strict)');
+
+if(age == 18) console.log('You just became an adult:D(loose)');
+
+// '18' === 18 fasle  (not type coercion)
+// '18' == 18  true (type coercion )
+
+const favourite = Number(prompt("What's your favourite number?"));
+console.log(favourite);
+console.log(typeof favourite);
+
+if (favourite === 23) { // 22 === 23 -> FALSE
+  console.log('Cool! 23 is an amzaing number!')
+} else if (favourite === 7) {
+  console.log('7 is also a cool number')
+} else if (favourite === 9) {
+  console.log('9 is also a cool number')
+} else {
+  console.log('Number is not 23 or 7 or 9')
+}sole.log('Number is not 23 or 7')
+ */
