@@ -87,7 +87,7 @@ console.log(x === window.x);
 console.log(y === window.y);
 console.log(z === window.z);
 console.log();
-*/
+
 
 ///////////////////////////////////////
 // The this Keyword in Practice
@@ -106,7 +106,7 @@ const calcAgeArrow = birthYear => {
 };
 calcAgeArrow(1980);
 
-// this keyword inside of a method
+////////// this keyword inside of a method
 const jonas = {
   year: 1991,
   calcAge: function () {
@@ -125,3 +125,40 @@ matilda.calcAge();
 
 const f = jonas.calcAge;
 f();
+
+
+// var firstName = 'Matilda';
+
+const jonas = {
+  firstName: 'Jonas',
+  year: 1991,
+  calcAge: function () {
+    // console.log (this);
+    console.log(2037 - this.year);
+
+    // Solution 1
+    // const self = this; // self or that
+    // // function inside of a method
+    // const isMillenial = function () {
+    //   console.log(self);
+    //   console.log(self.year >= 1981 && self.year <= 1996);
+
+    // Solution 2
+    const isMillenial = () => {
+      console.log(this);
+      console.log(this.year >= 1981 && this.year <= 1996);
+    };
+
+    isMillenial();
+  },
+
+  greet: function () {
+    console.log(this);
+    console.log(`Hey ${this.firstName}`);
+  },
+};
+jonas.greet(); // Hey undefined // arrow function doesn't get its own this keyword
+jonas.greet(this);
+jonas.calcAge();
+// 일반 함수는 자신이 종속된 객체를 this로 가리키고 화살표 함수는 자신이 종속된 인스턴스를 가리킨다.
+*/
